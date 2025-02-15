@@ -16,11 +16,13 @@ DROP TABLE IF EXISTS silver.crm_prd_info;
 CREATE TABLE silver.crm_prd_info (
     prd_id       INTEGER,
     prd_key      VARCHAR(50),
+	cat_id		 Varchar(50),
+	prd_key_short Varchar(50),
     prd_nm       VARCHAR(50),
     prd_cost     INTEGER,
     prd_line     VARCHAR(50),
-    prd_start_dt TIMESTAMP,
-    prd_end_dt   TIMESTAMP,
+    prd_start_dt Date,
+    prd_end_dt   Date,
 	dwh_create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
