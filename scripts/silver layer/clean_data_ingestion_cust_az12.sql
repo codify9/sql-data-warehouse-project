@@ -5,6 +5,7 @@ SELECT
     CASE 
         WHEN cid LIKE 'NAS%' THEN SUBSTRING(cid, 4)
         ELSE cid
+    
     END AS cid,
 
     CASE 
